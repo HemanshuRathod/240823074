@@ -144,3 +144,106 @@ for(let i=2; i<g; i++){
     console.log(" "+sum);
 }
   
+// 14. Check Vowel or Consonant
+// Definition: Determine if a given character is a vowel.
+
+
+let alph='a'
+let str="apple"
+if(str.includes('a'||'e'||'i'||'o'||'u')){
+    console.log("vowel");
+}else{
+    console.log("constant");
+}
+// 15. Simple Calculator
+// Definition: Perform +, -, *, / between two numbers.
+
+
+let a1 = 4;
+let b1 = 2;
+let operation = '/';
+
+let result2;
+if (operation === '+') {
+    result2 = a1 + b1;
+
+} else if (operation === '-') {
+    result2 = a1 - b1;
+
+} else if (operation === '*') {
+    result2 = a1 * b1;
+
+} else if (operation === '/') {
+    result2 = a1 / b1;
+} else {
+    result2 = "Invalid operation";
+}
+
+console.log(result2); 
+
+// 16. Find GCD (HCF)
+// Definition: Calculate the greatest common divisor of two numbers.
+
+
+let a2 = 28;
+let b2 = 0;
+
+
+while (b2 !== 0) {
+    let temp = b2;
+    b2 = a2 % b2;
+    a2 = temp;
+}
+console.log(a2);
+
+// 17. Check Perfect Number
+// Definition: A number whose sum of divisors equals itself.
+
+let num9 =  1 + 2 + 4 + 7 + 14 ;
+let sum9 = 0;
+
+for (let i = 1; i <= num9 / 2; i++) {
+    if (num9 % i === 0) {
+        sum9 += i;
+    }
+}
+
+if (sum9 === num9) {
+    console.log("Perfect");
+} else {
+    console.log("Not Perfect");
+}
+
+
+// 18. Print All Divisors
+// Definition: Display all positive divisors of a number.
+
+
+let nu=10
+for(let i=0; i<=nu; i++){
+    if(nu%i==0){
+        console.log(i)
+    }
+}
+
+// 19. Number is Positive, Negative or Zero
+// Definition: Check if number is +ve, -ve, or zero.
+
+let c = -5;
+
+if (c == 0) {
+    console.log("zero");
+} else if (c < 0) {
+    console.log("Negative");
+} else {
+    console.log("positive");
+}
+
+// 20. Find Power (Exponentiation)
+// Definition: Compute a raised to the power b (a^b).
+let a5 = 9;
+let b5 = 3;
+
+let result5 = a5 ** b5;
+
+console.log(result5); 
